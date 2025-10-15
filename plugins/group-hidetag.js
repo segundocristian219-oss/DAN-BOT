@@ -16,7 +16,7 @@ const handler = async (m, { conn, participants }) => {
         },
         message: {
             locationMessage: {
-                name: `𝖧𝗈𝗅𝖺, 𝖲𝗈𝗒 RICH BOT`,
+                name: `𝖧𝗈𝗅𝖺, 𝖲𝗈𝗒 𝓓𝓪𝓷𝓷 𝓑𝓸𝓽`,
                 jpegThumbnail: thumb
             }
         },
@@ -53,19 +53,19 @@ const handler = async (m, { conn, participants }) => {
 
                     if (finalText) {
                         await conn.sendMessage(m.chat, {
-                            text: `${finalText}\n\n> RICH BOT`,
+                            text: `${finalText}\n\n> 𝓓𝓪𝓷𝓷 𝓑𝓸𝓽`,
                             mentions: users
                         }, { quoted: fkontak })
                     }
                 } catch {
                     await conn.sendMessage(m.chat, {
-                        text: `${finalCaption}\n\n> RICH BOT`,
+                        text: `${finalCaption}\n\n> 𝓓𝓪𝓷𝓷 𝓑𝓸𝓽`,
                         mentions: users
                     }, { quoted: fkontak })
                 }
             } else {
-                if (mtype === 'imageMessage') await conn.sendMessage(m.chat, { image: media, caption: `${finalCaption}\n\n> RICH BOT`, mentions: users }, { quoted: fkontak })
-                if (mtype === 'videoMessage') await conn.sendMessage(m.chat, { video: media, caption: `${finalCaption}\n\n> RICH BOT`, mentions: users, mimetype: 'video/mp4' }, { quoted: fkontak })
+                if (mtype === 'imageMessage') await conn.sendMessage(m.chat, { image: media, caption: `${finalCaption}\n\n> 𝓓𝓪𝓷𝓷 𝓑𝓸𝓽`, mentions: users }, { quoted: fkontak })
+                if (mtype === 'videoMessage') await conn.sendMessage(m.chat, { video: media, caption: `${finalCaption}\n\n> 𝓓𝓪𝓷𝓷 𝓑𝓸𝓽`, mentions: users, mimetype: 'video/mp4' }, { quoted: fkontak })
                 if (mtype === 'stickerMessage') await conn.sendMessage(m.chat, { sticker: media, mentions: users }, { quoted: fkontak })
             }
         } else if (m.quoted && !isMedia) {
@@ -76,7 +76,7 @@ const handler = async (m, { conn, participants }) => {
                     { [mtype || 'extendedTextMessage']: q.message?.[mtype] || { text: finalCaption } },
                     { quoted: fkontak, userJid: conn.user.id }
                 ),
-                `${finalCaption}\n\n> RICH BOT`,
+                `${finalCaption}\n\n> 𝓓𝓪𝓷𝓷 𝓑𝓸𝓽`,
                 conn.user.jid,
                 { mentions: users }
             )
@@ -94,24 +94,24 @@ const handler = async (m, { conn, participants }) => {
 
                     if (finalText) {
                         await conn.sendMessage(m.chat, {
-                            text: `${finalText}\n\n> RICH BOT`,
+                            text: `${finalText}\n\n> 𝓓𝓪𝓷𝓷 𝓑𝓸𝓽`,
                             mentions: users
                         }, { quoted: fkontak })
                     }
                 } catch {
                     await conn.sendMessage(m.chat, {
-                        text: `${finalCaption}\n\n> RICH BOT`,
+                        text: `${finalCaption}\n\n> 𝓓𝓪𝓷𝓷 𝓑𝓸𝓽`,
                         mentions: users
                     }, { quoted: fkontak })
                 }
             } else {
-                if (mtype === 'imageMessage') await conn.sendMessage(m.chat, { image: media, caption: `${finalCaption}\n\n> RICH BOT`, mentions: users }, { quoted: fkontak })
-                if (mtype === 'videoMessage') await conn.sendMessage(m.chat, { video: media, caption: `${finalCaption}\n\n> RICH BOT`, mentions: users, mimetype: 'video/mp4' }, { quoted: fkontak })
+                if (mtype === 'imageMessage') await conn.sendMessage(m.chat, { image: media, caption: `${finalCaption}\n\n> 𝓓𝓪𝓷𝓷 𝓑𝓸𝓽`, mentions: users }, { quoted: fkontak })
+                if (mtype === 'videoMessage') await conn.sendMessage(m.chat, { video: media, caption: `${finalCaption}\n\n> 𝓓𝓪𝓷𝓷 𝓑𝓸𝓽`, mentions: users, mimetype: 'video/mp4' }, { quoted: fkontak })
                 if (mtype === 'stickerMessage') await conn.sendMessage(m.chat, { sticker: media, mentions: users }, { quoted: fkontak })
             }
         } else {
             await conn.sendMessage(m.chat, {
-                text: `${finalCaption}\n\n> RICH BOT`,
+                text: `${finalCaption}\n\n> 𝓓𝓪𝓷𝓷 𝓑𝓸𝓽`,
                 mentions: users
             }, { quoted: fkontak })
         }
@@ -119,7 +119,7 @@ const handler = async (m, { conn, participants }) => {
     } catch (e) {
         const users = participants.map(u => conn.decodeJid(u.id))
         await conn.sendMessage(m.chat, {
-            text: `🥷🏻 Notificación\n\n> RICH BOT`,
+            text: `🥷🏻 Notificación\n\n> 𝓓𝓪𝓷𝓷 𝓑𝓸𝓽`,
             mentions: users
         }, { quoted: fkontak })
     }
