@@ -25,12 +25,12 @@ let handler = async (m, { conn }) => {
       ]
     },
     {
-      name: 'Rich.𝗑𝗒𝗓',
+      name: 'Dann.𝗑𝗒𝗓',
       desc: 'Dueño Oficial 🏞️',
-      image: 'https://cdn.russellxz.click/8e647d33.jpeg',
+      image: 'https://cdn.russellxz.click/867fe4e7.jpeg',
       footer: '𝖭𝗂𝖼𝖾 𝖣𝗈 𝖸𝗈𝗎',
       buttons: [
-        { name: 'WhatsApp', url: 'https://wa.me/5216644962918' }
+        { name: 'WhatsApp', url: 'https://wa.me/5218281439708' }
 
       ]
     }
